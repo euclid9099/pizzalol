@@ -1,0 +1,133 @@
+
+{
+    "pizzas": [
+        {
+            "name": "Pizza Margherita",
+            "price": 650
+        },
+        {
+            "name": "Pizza Funghi",
+            "price": 690
+        },
+        {
+            "name": "Pizza Salami",
+            "price": 750
+        },
+        {
+            "name": "Pizza Cardinale",
+            "price": 750
+        },
+        {
+            "name": "Pizza Hawaii",
+            "price": 790
+        },
+        {
+            "name": "Pizza Al Capone",
+            "price": 850
+        },
+        {
+            "name": "Pizza Rusticana",
+            "price": 850
+        },
+        {
+            "name": "Pizza Capricciosa",
+            "price": 850
+        },
+        {
+            "name": "Pizza Diavolo",
+            "price": 850
+        },
+        {
+            "name": "Pizza Frutti de Mare",
+            "price": 890
+        },
+        {
+            "name": "Pizza Granchiolino",
+            "price": 890
+        },
+        {
+            "name": "Pizza Mafiosi",
+            "price": 850
+        },
+        {
+            "name": "Pizza Mexicana",
+            "price": 890
+        },
+        {
+            "name": "Pizza Calzone",
+            "price": 850
+        },
+        {
+            "name": "Pizza Calzone Salerno",
+            "price": 850
+        },
+        {
+            "name": "Chef Role",
+            "price": 890
+        },
+        {
+            "name": "Pizza Quattro Formaggi",
+            "price": 850
+        },
+        {
+            "name": "Pizza Quattro Stagioni (Vier Jahreszeiten)",
+            "price": 850
+        },
+        {
+            "name": "Pizza Mozzarella",
+            "price": 850
+        },
+        {
+            "name": "Pizza Siciliana",
+            "price": 850
+        },
+        {
+            "name": "Pizza Spinaci",
+            "price": 850
+        },
+        {
+            "name": "Pizza Toscana",
+            "price": 850
+        },
+        {
+            "name": "Pizza Tono",
+            "price": 850
+        },
+        {
+            "name": "Pizza Regina",
+            "price": 850
+        },
+        {
+            "name": "Pizza Bischofshofen",
+            "price": 890
+        },
+        {
+            "name": "Pizza Napoli",
+            "price": 890
+        },
+        {
+            "name": "Pizza Papa Roy",
+            "price": 850
+        },
+        {
+            "name": "Pizza Venezia",
+            "price": 890
+        },
+        {
+            "name": "Pizza Kebab",
+            "price": 850
+        },
+        {
+            "name": "Pizza Prosciutto",
+            "price": 890
+        },
+        {
+            "name": "Hauspizza",
+            "price": 890
+        },
+        {
+            "name": "Pizzabrot",
+            "price": 350
+        }
+    ]
+}
