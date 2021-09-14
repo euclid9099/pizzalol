@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Menu from "./pizzas.json";
 
-
+//toller kommentar
 class App extends React.Component {
     constructor(props) {
         super(props);
