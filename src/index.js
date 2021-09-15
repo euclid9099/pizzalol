@@ -69,23 +69,15 @@ class App extends React.Component {
 }
 
 class InfoBar extends React.Component {
-    //contains the users order and total pricing
- 
-    removePizza(id) {
-        this.props.removePizza(id);
-    }
-
-    sendOrder() {
-        this.props.sendOrder();
-    }
+    //contains the users order and total pricing 
 
     render() {
         const order = this.props.order; 
         return (
             <div class="infobar">
                 <div class="header">YOUR ORDER</div>
-                <CurrentOrder order={order} removePizza={this.removePizza.bind(this)}/>
-                <TotalAndPayment order={order} sendOrder={this.sendOrder.bind(this)}/>
+                <CurrentOrder order={order} removePizza={this.props.removePizza.bind(this)}/>
+                <TotalAndPayment order={order} sendOrder={this.props.sendOrder.bind(this)}/>
             </div>
         )
     }
@@ -93,10 +85,7 @@ class InfoBar extends React.Component {
 
 class CurrentOrder extends React.Component {
     //contains all orders and renders them as a list
- 
-    removePizza(id) {
-        this.props.removePizza(id);
-    }
+
 
     render() {
         const order = this.props.order;
@@ -104,7 +93,7 @@ class CurrentOrder extends React.Component {
             <div class="orders">
                 <ul>
                     {order.map((elem) =>
-                    <li onClick={this.removePizza.bind(this, elem)} key={elem[1]}>
+                    <li onClick={this.props.removePizza.bind(this, elem)} key={elem[1]}>
                         <div>{elem[0]}x {elem[1]}</div>
                         <div>€ {(elem[2]/100).toFixed(2)}</div>
                     </li>)}
@@ -133,17 +122,14 @@ class TotalAndPayment extends React.Component {
 
 class Products extends React.Component {
     //contains a list of all products (taken from pizzas.json) and maps them
- 
-    addPizza(name, price) {
-        this.props.addPizza(name, price);
-    }
+
 
     render() {
         const menu = this.props.menu;
         return (
             <ul id="products">
                 {menu.map((elem) => 
-                    <Product name={elem['name']} price={elem['price']} addPizza={this.addPizza.bind(this)}/>
+                    <Product name={elem['name']} price={elem['price']} addPizza={this.props.addPizza.bind(this)}/>
                 )}
             </ul>
         )
@@ -159,23 +145,20 @@ class Product extends React.Component {
         }
     }
 
-    addPizza(name, price) {
-        this.props.addPizza(name, price);
-    }
-
+    
     render() {
         return (
             <li class="product">
                 <div class="product-main">
                     <button class="product-extend" onClick={() => this.setState({expanded: !this.state.expanded})}>
                         {this.state.expanded ? 
-                        (<CollapseIcon />) : (<CollapseIcon />)}
+                        (<CollapseIcon style={{height:"50px", width:"50px", fill:"#9F9F9F", transform:"rotate(90deg)"}}/>) : (<CollapseIcon style={{height:"50px", width:"50px", fill:"#9F9F9F"}}/>)}
                      </button>
                     <div class="product-name">{
                         this.props.name.length <= 25 ? this.props.name : this.props.name.substring(0,22) + "..."
                     }</div>
                     <div class="product-price">€ {(this.props.price/100).toFixed(2)}</div>
-                    <button class="product-add" onClick={this.addPizza.bind(this, this.props.name, this.props.price)}>&#x002B;</button>
+                    <button class="product-add" onClick={this.props.addPizza.bind(this, this.props.name, this.props.price)}>&#x002B;</button>
                 </div>
                 {this.state.expanded && 
                     <div class="product-info">
