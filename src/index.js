@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Menu from "./pizzas.json";
 
-//toller kommentar
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -10,10 +9,6 @@ class App extends React.Component {
             pizzas: Menu.pizzas,
             order: []
         }
-        this.removePizza = this.removePizza.bind(this);
-        this.minusOnePizza = this.minusOnePizza.bind(this);
-        this.sendOrder = this.sendOrder.bind(this);
-        this.addPizza = this.addPizza.bind(this);
     }
 
     //filters order, removes one pizza and the whole item if there is no pizza left
@@ -74,10 +69,7 @@ class App extends React.Component {
 
 class InfoBar extends React.Component {
     //contains the users order and total pricing
-    constructor(props) {
-        super(props);
-    }
-
+ 
     removePizza(id) {
         this.props.removePizza(id);
     }
@@ -100,10 +92,7 @@ class InfoBar extends React.Component {
 
 class CurrentOrder extends React.Component {
     //contains all orders and renders them as a list
-    constructor(props) {
-        super(props);
-    }
-
+ 
     removePizza(id) {
         this.props.removePizza(id);
     }
@@ -126,10 +115,7 @@ class CurrentOrder extends React.Component {
 
 class TotalAndPayment extends React.Component {
     //contains the total cost of your order and a button to send your order
-    sendOrder() {
-        this.props.sendOrder();
-    }
-
+ 
     render() {
         const order = this.props.order;
         return (
@@ -137,7 +123,7 @@ class TotalAndPayment extends React.Component {
                 <div class="total">
                     <div>Total:</div>
                     <div>€ {(order.reduce((prevVal, current) => prevVal + (current[2]*current[0]), 0)/100).toFixed(2)}</div>
-                    <button class="send" onClick={this.sendOrder.bind(this)}>Send Order</button>
+                    <button class="send" onClick={this.props.sendOrder.bind(this)}>Send Order</button>
                 </div>
             </ShortBorder>
         )
@@ -146,10 +132,7 @@ class TotalAndPayment extends React.Component {
 
 class Products extends React.Component {
     //contains a list of all products (taken from pizzas.json) and maps them
-    constructor(props) {
-        super(props);
-    }
-
+ 
     addPizza(name, price) {
         this.props.addPizza(name, price);
     }
