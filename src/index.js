@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Menu from "./pizzas.json";
+import {ReactComponent as CollapseIcon} from "./collapse.svg"
 
 class App extends React.Component {
     constructor(props) {
@@ -168,8 +169,7 @@ class Product extends React.Component {
                 <div class="product-main">
                     <button class="product-extend" onClick={() => this.setState({expanded: !this.state.expanded})}>
                         {this.state.expanded ? 
-                        <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 0 24 24" width="50px" fill="#9F9F9F"><path d="M0 0h24v24H0z" fill="none"/><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
-                        : <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 0 24 24" width="50px" fill="#9F9F9F"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"/></svg>}
+                        (<CollapseIcon />) : (<CollapseIcon />)}
                      </button>
                     <div class="product-name">{
                         this.props.name.length <= 25 ? this.props.name : this.props.name.substring(0,22) + "..."
