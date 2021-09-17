@@ -14,20 +14,20 @@ class App extends React.Component {
 
     //filters order, removes one pizza and the whole item if there is no pizza left
     removePizza(id) { 
-        this.setState(prevState => ({
-            order: prevState.order.filter(el => this.minusOnePizza(el,id) )
-        }));
-    }
-
-    //remmoves one pizza, and also returns 'false' if the item should be removed
-    minusOnePizza(el, id) {
-        if (el === id) {
-            el[0]--;
-            if (el[0] <= 0) {
-                return false;
+        var neworder = this.state.order.map(el => {
+            if (el === id) {
+                return [el[0]-1, el[1], el[2]];
             }
-        }
-        return true;
+            
+            return el;
+        });
+       
+        
+        neworder = neworder.filter(el => el[0] > 0);
+
+        this.setState(({
+            order: neworder
+        }));
     }
 
     //searches for a pizza by its name and adds one more if found, otherwise adds a new item with this additional pizza and price
