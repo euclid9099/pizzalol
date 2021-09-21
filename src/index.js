@@ -33,13 +33,14 @@ class App extends React.Component {
     //searches for a pizza by its name and adds one more if found, otherwise adds a new item with this additional pizza and price
     addPizza(name, price) {
         let found = false;
-        this.state.order.forEach(element => {
-            if (element[1] === name) {
-                this.setState(({
-                    element: element[0] += 1
-                }))
-                found = true;
-            }
+        this.setState({
+            order: this.state.order.map(el => {
+                if(el[1] === name && el[2] === price) {
+                    found = true;
+                    return [el[0]+1, el[1], el[2]];
+                }
+                return el;
+            })
         });
 
         if (!found) {
@@ -129,7 +130,7 @@ class Products extends React.Component {
         return (
             <ul id="products">
                 {menu.map((elem) => 
-                    <Product name={elem['name']} price={elem['price']} addPizza={this.props.addPizza.bind(this)}/>
+                    <Product name={elem.name} price={elem.price} addPizza={this.props.addPizza.bind(this)}/>
                 )}
             </ul>
         )
