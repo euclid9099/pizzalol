@@ -30,7 +30,7 @@ class App extends React.Component {
         }));
     }
 
-    //searches for a pizza by its name and adds one more if found, otherwise adds a new item with this additional pizza and price
+    //searches for a pizza by its name and adds one more if found, otherwise adds a new item with this pizza and price
     addPizza(name, price) {
         let found = false;
         this.setState({

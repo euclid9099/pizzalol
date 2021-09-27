@@ -3,131 +3,168 @@
     "pizzas": [
         {
             "name": "Pizza Margherita",
-            "price": 650
+            "price": 650,
+            "description": "Tomatensauce, Mozzarellakäse und Oregano"
         },
         {
             "name": "Pizza Funghi",
-            "price": 690
+            "price": 690,
+            "description": "Tomatensauce, Mozzarellakäse, Champignos und Oregano"
         },
         {
             "name": "Pizza Salami",
-            "price": 750
+            "price": 750,
+			"description": "Tomatensauce Mozzarellakäse, Salami und Oregano"
         },
         {
             "name": "Pizza Cardinale",
-            "price": 750
+            "price": 750,
+			"description": "Tomatensauce, Mozzarellakäse, Schinken und Oregano"
         },
         {
             "name": "Pizza Hawaii",
-            "price": 790
+            "price": 790,
+			"description": "Tomatensauce, Mozzarellakäse, Schinken, Ananas und Oregano"
         },
         {
             "name": "Pizza Al Capone",
-            "price": 850
+            "price": 850,
+			"description": "Tomatensauce, Mozzarellakäse, Salami, Schinken, Speck, Zwiebel, scharfe Pfefferoni und Oregano"
         },
         {
             "name": "Pizza Rusticana",
-            "price": 850
+            "price": 850,
+			"description": "Tomatensauce, Mozzarellakäse, Schinken, Speck, Champignons, Mais, Eier und Oregano"
         },
         {
             "name": "Pizza Capricciosa",
-            "price": 850
+            "price": 850,
+			"description": "Tomatensauce, Mozzarellakäse, Sardellen, Schinken, Paprika, Artischocken, Champignons, Oliven und Oregano"
         },
         {
             "name": "Pizza Diavolo",
-            "price": 850
+            "price": 850,
+			"description": "Tomatensauce, Mozzarellakäse, Salami, Champignons, Scharfe Pfefferoni und Oregano"
         },
         {
             "name": "Pizza Frutti de Mare",
-            "price": 890
+            "price": 890,
+			"description": "Tomatensauce, Mozzarellakäse, Meeresfrüchte, Knoblauch und Oregano"
         },
         {
             "name": "Pizza Granchiolino",
-            "price": 890
+            "price": 890,
+			"description": "Tomatensauce, Mozzarellakäse, Shrimps, Spinat, Knoblauch und Oregano"
         },
         {
             "name": "Pizza Mafiosi",
-            "price": 850
+            "price": 850,
+			"description": "Tomatensauce, Mozzarellakäse, Salami, Zwiebel, Scharfe Pfefferoni und Oregano"
         },
         {
             "name": "Pizza Mexicana",
-            "price": 890
+            "price": 890,
+			"description": "Tomatensause, Mozzarellakäse, Salami, Paprika, Mais, Zwiebel, Scharfe Pfefferoni und Oregano"
         },
         {
             "name": "Pizza Calzone",
-            "price": 850
+            "price": 850,
+			"description": "Gefüllt mit Tomatensause, Mozzarellakäse, Salami, Schinken, Champignons, Knoblauch und Oregano"
         },
         {
             "name": "Pizza Calzone Salerno",
-            "price": 850
+            "price": 850,
+			"description": "Gefüllt mit Tomatensauce, Mozzarellakäse, Prosciutto, Mozzarella, Knoblauch und Oregano"
         },
         {
             "name": "Chef Role",
-            "price": 890
+            "price": 890,
+			"description": "Gefüllt mit Tomatensauce, Mozzarellakäse, Kebabfleisch, Champignons, Zwiebel, Milde Pfefferoni, knoblauch und Oregano"
         },
         {
             "name": "Pizza Quattro Formaggi",
-            "price": 850
+            "price": 850,
+			"description": "Tomatensauce, Mozzarellakäse, 4 verschiedene Käsesorten und Oregano"
         },
         {
             "name": "Pizza Quattro Stagioni (Vier Jahreszeiten)",
-            "price": 850
+            "price": 850,
+			"description": "Tomatensauce, Mozzarellakäse, Salami, Schinken, Champignons, Artischocken und Oregano"
         },
         {
             "name": "Pizza Mozzarella",
-            "price": 850
+            "price": 850,
+			"description": "Tomatensauce, Mozzarellakäse, Frische Tomaten, frische Basilikum, Mozzarella, Ruccola und Oregano"
         },
         {
             "name": "Pizza Siciliana",
-            "price": 850
+            "price": 850,
+			"description": "Tomatensauce, Mozzarellakäse, Sardellen, Kapern, Zwiebel, Knoblauch und Oregano"
         },
         {
             "name": "Pizza Spinaci",
-            "price": 850
+            "price": 850,
+			"description": "Tomatensauce, Mozzarellakäse, Schafkäse, Spinat, Knoblauch und Oregano"
         },
         {
             "name": "Pizza Toscana",
-            "price": 850
+            "price": 850,
+			"description": "Tomatensauce, Mozzarellakäse, Salami, Speck, Champignons und Oregano"
         },
         {
             "name": "Pizza Tono",
-            "price": 850
+            "price": 850,
+			"description": "Tomatensauce, Mozzarellakäse, Thunfisch, Zwiebel, Knoblauch und Oregano"
         },
         {
             "name": "Pizza Regina",
-            "price": 850
+            "price": 850,
+			"description": "Tomatensauce, Mozzarellakäse, Schinken, Champignons und Oregano"
         },
         {
             "name": "Pizza Bischofshofen",
-            "price": 890
+            "price": 890,
+			"description": "Tomatensauce, Mozzarellakäse, Schinken, Schrimps, Gorgonzola, Sardellen, Knoblauch und Oregano"
         },
         {
             "name": "Pizza Napoli",
-            "price": 890
+            "price": 890,
+			"description": "Tomatensauce, Mozzarellakäse, Salami, Oliven, Sardellen, Parmesan und Oregano"
         },
         {
             "name": "Pizza Papa Roy",
-            "price": 850
+            "price": 850,
+			"description": "Tomatensauce, Mozzarellakäse, Frische Zucchini, Speck, Champignons und Oregano"
         },
         {
             "name": "Pizza Venezia",
-            "price": 890
+            "price": 890,
+			"description": "Tomatensauce, Mozzarellakäse, Gegrillte Hühnerbrust, Mais, Paprika, Zwiebel und Oregano"
         },
         {
             "name": "Pizza Kebab",
-            "price": 850
+            "price": 850,
+			"description": "Tomatensausce, Mozzarellakäse, Kebabfleisch, Mais, Paprika, Zwiebel und Oregano"
         },
         {
             "name": "Pizza Prosciutto",
-            "price": 890
+            "price": 890,
+			"description": "frische Tomaten, Prosciutto, Rucola und Parmesan"
         },
         {
             "name": "Hauspizza",
-            "price": 890
+            "price": 890,
+			"description": "Tomatensausce, Salami, Schinken, Champignons und Mais"
+        },
+        {
+            "name": "Wunschpizza",
+            "price": 1090,
+			"description": "Tomatensauce, Mozzarellakäse und 5 Zutaten"
         },
         {
             "name": "Pizzabrot",
-            "price": 350
+            "price": 350,
+			"description": "Mit Knoblauch"
         }
     ]
 }
